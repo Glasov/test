@@ -1,5 +1,10 @@
 @Controller
 @DefaultExceptionHandler
+/**
+ * asdasd 
+ * asd 
+ * sdf sdfa sdf asdf
+ */
 @RequestMapping("project/{userAlias}/{projectAlias}/blob")
 public class BlobController extends AbstractRepositoryController {
     private final CodeHighLightService codeHighLightService;
