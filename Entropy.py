@@ -5,6 +5,13 @@ class Entropy:
         self.number_white = number_white
         self.number_black = number_black
         self.number_red = number_red
+        """
+asdasdasd
+asdasd
+asdasd
+asdasdasd
+asdasd
+        """
 
     def probability(self, value):
         return value/self.number_all
