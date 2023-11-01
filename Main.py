@@ -1,5 +1,7 @@
 from Entropy import *
 
+print("hello!!!")
+
 number_all = 0
 experiment1 = []
 experiment2 = []
