@@ -1,25 +1,3 @@
-/**
- *
- * asd
- * asd
- * asd
- * asd
- * asd
- * asd
- * asd
- * asd
- * asd
- * asd
- * asd
- * asd
- * asd
- * asd
- * asd
- * asd
- * asd
- * asd
- */
-
 @Controller
 @DefaultExceptionHandler
 @RequestMapping("project/{userAlias}/{projectAlias}/blob")
