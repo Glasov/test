@@ -16,7 +16,7 @@ job 1:
   scripts:
     - bash script.sh
     - mkdir target
-    - cat sast.json > target/spotbugsSarif.json
+    - cat spotbugsSarif.json > target/spotbugsSarif.json
   artifacts:
       reports:
         paths: 'target/spotbugsSarif.json'
