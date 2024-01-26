@@ -15,8 +15,6 @@ job 1:
   stage: stage
   scripts:
     - bash script.sh
-    - mvn -Dmaven.repo.local=.m2/repository -Dstyle.color=always clean compile
-    - mvn -Dstyle.color=always spotbugs:spotbugs -f pom.xml
   artifacts:
       reports:
         paths: 'target/spotbugsSarif.json'
