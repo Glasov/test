@@ -20,7 +20,6 @@ job 1:
   artifacts:
       reports:
         paths: 'target/spotbugsSarif.json'
-        base_dir: ''
       name: hui
       paths:
         - 'pom.xml'
