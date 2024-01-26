@@ -24,25 +24,3 @@ job 1:
       name: hui
       paths:
         - 'pom.xml'
-
-job 11:
-  stage: stage
-  scripts:
-    - ./script.sh
-  tags:
-    - docker
-
-job 2:
-  stage: destroy
-  scripts:
-    - mvn -Dmaven.repo.local=.m2/repository -Dstyle.color=always clean compile
-
-job 3:
-  stage: create
-  scripts:
-    - ./script.sh
-
-job 4:
-  stage: obliterate
-  scripts:
-    - ./script.sh
