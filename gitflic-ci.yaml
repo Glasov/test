@@ -15,6 +15,7 @@ job 1:
   stage: stage
   scripts:
     - bash script.sh
+    - cat Entropy.py
   artifacts:
       reports:
         paths: 'target/spotbugsSarif.json'
