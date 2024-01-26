@@ -1,4 +1,3 @@
-
 image: maven:3.8.5-openjdk-11-slim
 stages:
   - stage
@@ -15,7 +14,7 @@ cache:
 job 1:
   stage: stage
   scripts:
-    - ./script.sh
+    - bash script.sh
     - mvn -Dmaven.repo.local=.m2/repository -Dstyle.color=always clean compile
     - mvn -Dstyle.color=always spotbugs:spotbugs -f pom.xml
   artifacts:
