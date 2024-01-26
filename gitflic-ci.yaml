@@ -3,6 +3,7 @@ stages:
   - stage
   - destroy
   - create
+  - dast
   - obliterate
 
 cache:
@@ -15,7 +16,7 @@ job 1:
   stage: stage
   scripts:
     - bash script.sh
-    - mkdir target
+    - mkdir -p target
     - cat spotbugsSarif.json > target/spotbugsSarif.json
   artifacts:
       reports:
@@ -23,3 +24,16 @@ job 1:
       name: hui
       paths:
         - 'pom.xml'
+
+job 2:
+  stage: dast
+  scripts:
+    - echo DAST
+    - mkdir -p target
+    - cat spotbugsSarif.json > target/spotbugsSarif.json
+  artifacts:
+    reports:
+      paths: 'target/spotbugsSarif.json'
+    name: hui
+    paths:
+      - 'pom.xml'
