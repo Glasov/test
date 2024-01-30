@@ -17,10 +17,10 @@ job 2:
   scripts:
     - echo DAST
     - mkdir -p target
-    - cat spotbugsSarif.json > target/spotbugsSarif.json
+    - cat dast.json > target/dast.json
   artifacts:
     reports:
-      paths: 'target/spotbugsSarif.json'
+      paths: 'target/dast.json'
     name: hui
     paths:
       - 'pom.xml'
