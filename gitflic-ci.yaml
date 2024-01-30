@@ -17,6 +17,7 @@ job 2:
   scripts:
     - echo DAST
     - mkdir -p target
+    - cat dast.json
     - cat dast.json > target/dast.json
   artifacts:
     reports:
