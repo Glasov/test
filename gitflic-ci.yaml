@@ -15,7 +15,7 @@ dast:
   scripts:
     - echo DAST
     - mkdir -p target
-    - ls
+    - ls /
     - echo DONE!
   artifacts:
     reports:
