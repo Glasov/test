@@ -1,5 +1,5 @@
-image: maven:3.8.5-openjdk-11-slim
 stages:
+  - pre
   - dast
 
 cache:
@@ -8,10 +8,17 @@ cache:
     - core/target/
     - desktop/target/
 
+pre:
+  stage: pre
+  image: maven:3.8.5-openjdk-11-slim
+  scripts:
+    - echo PRE
+    - echo BLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLABLA
+    - echo DONE!
+
 dast:
-  image:
-    name: softwaresecurityproject/zap-weekly:latest
   stage: dast
+  image: softwaresecurityproject/zap-weekly:latest
   scripts:
     - echo DAST
     - mkdir -p target
