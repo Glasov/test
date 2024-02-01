@@ -15,7 +15,7 @@ dast:
   scripts:
     - echo DAST
     - mkdir -p target
-    - zap.sh -addonupdate -addoninstall reports
+    - ls
     - echo DONE!
   artifacts:
     reports:
