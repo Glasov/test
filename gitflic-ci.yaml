@@ -21,7 +21,7 @@ dast:
   image: softwaresecurityproject/zap-stable
   scripts:
     - echo DAST
-    - zap.sh -addonupdate -addoninstall reports
+    - zap.sh -cmd -addonupdate -addoninstall reports
     - echo DONE!
   artifacts:
     reports:
