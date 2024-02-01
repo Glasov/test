@@ -21,8 +21,8 @@ dast:
   image: softwaresecurityproject/zap-weekly:latest
   scripts:
     - echo DAST
-    - zap.sh -addoninstall reports
-    - zap.sh -h
+    - bash -c "zap.sh -addoninstall reports"
+    - bash -c "zap.sh -h"
     - echo DONE!
   artifacts:
     reports:
