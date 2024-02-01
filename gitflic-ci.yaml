@@ -18,10 +18,10 @@ pre:
 
 dast:
   stage: dast
-  image: softwaresecurityproject/zap-weekly:latest
+  image: softwaresecurityproject/zap-stable
   scripts:
     - echo DAST
-    - zap-baseline.py -z "-addoninstall reports -config report.parameters.template=sarif-json" -t https://example.com
+    - zap.sh -addonupdate -addoninstall reports
     - echo DONE!
   artifacts:
     reports:
