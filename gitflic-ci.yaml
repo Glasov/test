@@ -1,10 +1,6 @@
 image: maven:3.8.5-openjdk-11-slim
 stages:
-  - stage
-  - destroy
-  - create
   - dast
-  - obliterate
 
 cache:
   paths:
@@ -12,13 +8,15 @@ cache:
     - core/target/
     - desktop/target/
 
-job 2:
+dast:
+  image:
+    name: softwaresecurityproject/zap-weekly:latest
   stage: dast
   scripts:
     - echo DAST
     - mkdir -p target
-    - cat dast.json
-    - cat dast.json > target/dast.json
+    - zap.sh -addonupdate -addoninstall reports
+    - echo DONE!
   artifacts:
     reports:
       paths: 'target/dast.json'
