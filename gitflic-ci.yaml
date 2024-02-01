@@ -21,11 +21,11 @@ dast:
   image: softwaresecurityproject/zap-weekly:latest
   scripts:
     - echo DAST
-    - zap-baseline.py -z "-addoninstall reports" -t https://example.com
+    - zap-baseline.py -z "-addoninstall reports -config report.parameters.template=sarif-json" -t https://example.com
     - echo DONE!
   artifacts:
     reports:
-      paths: 'target/dast.json'
-    name: hui
+      paths: 'target/dast-report.json'
+    name: report
     paths:
       - 'pom.xml'
