@@ -21,8 +21,7 @@ dast:
   image: softwaresecurityproject/zap-weekly:latest
   scripts:
     - echo DAST
-    - bash -c "zap.sh -addoninstall reports"
-    - bash -c "zap.sh -h"
+    - zap-baseline.py -z "-addoninstall reports" -t https://example.com
     - echo DONE!
   artifacts:
     reports:
