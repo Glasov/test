@@ -21,7 +21,7 @@ dast:
   image: softwaresecurityproject/zap-stable
   scripts:
     - echo DAST
-    - zap-baseline.py -z "-cmd -addonupdate -addoninstall reports" -t http://www.google.com
+    - zap.sh -addonupdate -addoninstall reports -cmd -autorun wrk/zap.yaml
     - echo DONE!
   artifacts:
     reports:

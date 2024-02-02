@@ -1,4 +1,5 @@
 import math 
+
 class Entropy: 
     def __init__(self, number_all, number_white, number_black, number_red):
         self.number_all = number_all
