@@ -40,7 +40,7 @@ jobs:
     - button
     - input
     excludedElements: []
-    maxDuration: '2'
+    maxDuration: 2
     user: adminuser@admin.local
   type: spiderAjax
 - type: passiveScan-wait
