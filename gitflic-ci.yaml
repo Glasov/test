@@ -21,7 +21,7 @@ dast:
   image: softwaresecurityproject/zap-stable
   scripts:
     - echo DAST
-    - zap.sh -addonupdate -addoninstall reports -cmd -autorun wrk/zap.yaml
+    - zap.sh -addonupdate -addoninstall spiderAjax -addoninstall reports -cmd -autorun zap.yaml
     - echo DONE!
   artifacts:
     reports:
