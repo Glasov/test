@@ -25,7 +25,8 @@ dast:
     - touch /zap/dast-report.json
     - zap.sh -addoninstall reports -cmd -autorun /builds/adminuser/dsadsa/zap.yaml
     - echo DONE!
+    - cp /zap/dast-report.json zap/dast-report.json
   artifacts:
     reports:
-      paths: /zap/dast-report.json
+      paths: zap/dast-report.json
     name: report
