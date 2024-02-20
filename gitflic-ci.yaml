@@ -4,9 +4,7 @@ stages:
 
 cache:
   paths:
-    - .m2/repository/
-    - core/target/
-    - desktop/target/
+    - /zap
 
 pre:
   stage: pre
