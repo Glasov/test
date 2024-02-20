@@ -22,6 +22,7 @@ dast:
   scripts:
     - echo DAST
     - ls
+    - pwd
     - zap.sh -addoninstall reports -cmd -autorun zap.yaml
     - echo DONE!
   artifacts:
