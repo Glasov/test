@@ -23,7 +23,7 @@ dast:
     - ls
     - echo $wrk
     - touch /zap/dast-report.json
-    - zap.sh -addoninstall reports -cmd -autorun ./zap.yaml
+    - zap.sh -addoninstall reports -cmd -autorun /builds/adminuser/dsadsa/zap.yaml
     - echo DONE!
   artifacts:
     reports:
