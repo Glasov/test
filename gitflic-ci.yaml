@@ -21,12 +21,12 @@ dast:
   image: softwaresecurityproject/zap-stable
   scripts:
     - echo DAST
-    - touch /builds/adminuser/dsadsa/dast-report.json
+    - touch /zap/dast-report.json
     - zap.sh -addoninstall reports -cmd -autorun /builds/adminuser/dsadsa/zap.yaml
     - echo DONE!
   artifacts:
     reports:
-      paths: 'dast-report.json'
+      paths: '/zap/dast-report.json'
     name: report
     paths:
       - 'pom.xml'
