@@ -19,12 +19,12 @@ dast:
   image: owasp/zap2docker-stable
   scripts:
     - echo DAST
-    - touch /zap/dast-report.json
-    - zap.sh -addoninstall reports -cmd -autorun /builds/adminuser/dsadsa/zap.yaml
+    - touch dast-report.json
+    - zap.sh -addoninstall reports -cmd -autorun ./zap.yaml
     - echo DONE!
   artifacts:
     reports:
-      paths: '/zap/dast-report.json'
+      paths: 'dast-report.json'
     name: report
     paths:
       - 'pom.xml'

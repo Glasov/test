@@ -19,16 +19,21 @@ env:
   - name: spiderAjax
     urls:
     - https://example.com
+    users:
+    - credentials:
+        password: qwerty123
+        username: adminuser@admin.local
+      name: adminuser@admin.local
   parameters:
     failOnError: true
     failOnWarning: false
     progressToStdout: true
 jobs:
 - parameters:
-    context: spider
-  type: spider
+    context: spiderAjax
+  type: spiderAjax
 - parameters:
-    reportDir: /zap
+    reportDir: .
     reportFile: dast-report.json
     template: sarif-json
   type: report
