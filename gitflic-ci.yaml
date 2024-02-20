@@ -23,7 +23,7 @@ dast:
     - echo DAST
     - ls
     - pwd
-    - zap.sh -addoninstall reports -cmd -autorun zap.yaml
+    - zap.sh -addoninstall reports -cmd -autorun /builds/adminuser/dsadsa/zap.yaml
     - echo DONE!
   artifacts:
     reports:
