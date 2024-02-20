@@ -33,7 +33,7 @@ jobs:
     context: spiderAjax
   type: spiderAjax
 - parameters:
-    reportDir: /builds/adminuser/dsadsa/target
+    reportDir: /zap
     reportFile: dast-report.json
     template: sarif-json
   type: report
