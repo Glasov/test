@@ -28,7 +28,7 @@ jobs:
     context: spider
   type: spider
 - parameters:
-    reportDir: .
+    reportDir: target
     reportFile: dast-report.json
     template: sarif-json
   type: report
