@@ -16,7 +16,7 @@ pre:
 
 dast:
   stage: dast
-  image: softwaresecurityproject/zap-stable
+  image: owasp/zap2docker-stable
   scripts:
     - echo DAST
     - touch /zap/dast-report.json
