@@ -19,6 +19,9 @@ dast:
   image: owasp/zap2docker-stable
   scripts:
     - echo DAST
+    - pwd
+    - ls
+    - echo $wrk
     - touch dast-report.json
     - zap.sh -addoninstall reports -cmd -autorun ./zap.yaml
     - echo DONE!
