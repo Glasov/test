@@ -21,8 +21,7 @@ dast:
   image: softwaresecurityproject/zap-stable
   scripts:
     - echo DAST
-    - ls
-    - pwd
+    - mkdir target
     - touch target/dast-report.json
     - zap.sh -addoninstall reports -cmd -autorun ./zap.yaml
     - echo DONE!
