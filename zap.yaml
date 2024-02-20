@@ -1,0 +1,51 @@
+env:
+  contexts:
+  - name: spider
+    urls:
+    - https://example.com
+    users:
+    - credentials:
+        password: qwerty123
+        username: adminuser@admin.local
+      name: adminuser@admin.local
+  - name: active-scan
+    urls:
+    - https://example.com
+    users:
+    - credentials:
+        password: qwerty123
+        username: adminuser@admin.local
+      name: adminuser@admin.local
+  - name: spiderAjax
+    urls:
+    - https://example.com
+  parameters:
+    failOnError: true
+    failOnWarning: false
+    progressToStdout: true
+jobs:
+- type: passiveScan-config
+- parameters:
+    context: spider
+  type: spider
+- type: passiveScan-wait
+- parameters:
+    context: active-scan
+  type: activeScan
+- parameters:
+    clickDefaultElems: false
+    context: spiderAjax
+    elements:
+    - a
+    - button
+    - input
+    excludedElements: []
+    maxDuration: '2'
+    user: adminuser@admin.local
+  type: spiderAjax
+- type: passiveScan-wait
+- parameters:
+    reportDir: .
+    reportFile: dast-report.json
+    template: sarif-json
+  type: report
