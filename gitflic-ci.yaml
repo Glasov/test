@@ -22,12 +22,13 @@ dast:
     - pwd
     - ls
     - echo $wrk
-    - touch dast-report.json
+    - mkdir /builds/adminuser/dsadsa/target
+    - touch /builds/adminuser/dsadsa/target/dast-report.json
     - zap.sh -addoninstall reports -cmd -autorun ./zap.yaml
     - echo DONE!
   artifacts:
     reports:
-      paths: 'dast-report.json'
+      paths: '/builds/adminuser/dsadsa/target/dast-report.json'
     name: report
     paths:
       - 'pom.xml'
