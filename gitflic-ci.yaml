@@ -21,9 +21,9 @@ dast:
   image: softwaresecurityproject/zap-stable
   scripts:
     - echo DAST
-    - mkdir target
-    - touch target/dast-report.json
-    - zap.sh -addoninstall reports -cmd -autorun ./zap.yaml
+    - mkdir /builds/adminuser/dsadsa/target
+    - touch /builds/adminuser/dsadsa/target/dast-report.json
+    - zap.sh -addoninstall reports -cmd -autorun /builds/adminuser/dsadsa/zap.yaml
     - echo DONE!
   artifacts:
     reports:
