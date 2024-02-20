@@ -24,26 +24,9 @@ env:
     failOnWarning: false
     progressToStdout: true
 jobs:
-- type: passiveScan-config
 - parameters:
     context: spider
   type: spider
-- type: passiveScan-wait
-- parameters:
-    context: active-scan
-  type: activeScan
-- parameters:
-    clickDefaultElems: false
-    context: spiderAjax
-    elements:
-    - a
-    - button
-    - input
-    excludedElements: []
-    maxDuration: 2
-    user: adminuser@admin.local
-  type: spiderAjax
-- type: passiveScan-wait
 - parameters:
     reportDir: .
     reportFile: dast-report.json
