@@ -2,10 +2,6 @@ stages:
   - pre
   - dast
 
-cache:
-  paths:
-    - /zap
-
 pre:
   stage: pre
   image: maven:3.8.5-openjdk-11-slim
