@@ -1,0 +1,39 @@
+env:
+  contexts:
+  - name: spider
+    urls:
+    - https://example.com
+    users:
+    - credentials:
+        password: qwerty123
+        username: adminuser@admin.local
+      name: adminuser@admin.local
+  - name: active-scan
+    urls:
+    - https://example.com
+    users:
+    - credentials:
+        password: qwerty123
+        username: adminuser@admin.local
+      name: adminuser@admin.local
+  - name: spiderAjax
+    urls:
+    - https://example.com
+    users:
+    - credentials:
+        password: qwerty123
+        username: adminuser@admin.local
+      name: adminuser@admin.local
+  parameters:
+    failOnError: true
+    failOnWarning: false
+    progressToStdout: true
+jobs:
+- parameters:
+    context: spiderAjax
+  type: spiderAjax
+- parameters:
+    reportDir: /zap
+    reportFile: dast-report.json
+    template: sarif-json
+  type: report

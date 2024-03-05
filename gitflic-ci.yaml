@@ -1,0 +1,9 @@
+stages:
+  - pre
+
+pre:
+  stage: pre
+  image: maven:3.8.5-openjdk-11-slim
+  scripts:
+    - echo PRE
+    - echo DONE!

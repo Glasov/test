@@ -6,13 +6,10 @@ class Entropy:
         self.number_black = number_black
         self.number_red = number_red
         # asdfskjdnfsdkjg
-
     def probability(self, value):
         return value/self.number_all
-
     def log2(self, value):
         return math.log10(value)
-
     def entropy(self, array_values):
         res = 0
         for i in range(3):
