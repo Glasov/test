@@ -8,8 +8,8 @@ pre:
     - echo PRE
     - echo DONE!
   artifacts:
+    paths: ''
     reports:
-      paths: ''
       sast:
         paths:
          - 'spotbugsSarif.json'
