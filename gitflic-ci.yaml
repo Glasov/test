@@ -10,6 +10,7 @@ pre:
   artifacts:
     reports:
       sast:
+        paths:
          - 'spotbugsSarif.json'
          - 'sast.json'
       dast:
