@@ -8,11 +8,9 @@ pre:
     - echo PRE
     - echo DONE!
   artifacts:
-    paths: ''
     reports:
       sast:
         paths:
-         - 'spotbugsSarif.json'
          - 'sast.json'
       dast:
         paths:
