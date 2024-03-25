@@ -11,7 +11,7 @@ pre:
     reports:
       sast:
         paths:
-         - 'spotbugsSarif.json'
+         - 'report.json'
          - 'sast.json'
       dast:
         paths:
