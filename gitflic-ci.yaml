@@ -7,3 +7,12 @@ pre:
   scripts:
     - echo PRE
     - echo DONE!
+  artifacts:
+    reports:
+      sast:
+        paths:
+         - 'spotbugsSarif.json'
+         - 'sast.json'
+      dast:
+        paths:
+         - 'report.json'
