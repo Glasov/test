@@ -9,6 +9,7 @@ pre:
     - echo DONE!
   artifacts:
     reports:
+      paths: ''
       sast:
         paths:
          - 'spotbugsSarif.json'
