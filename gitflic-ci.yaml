@@ -9,4 +9,5 @@ pre:
     - echo DONE!
   artifacts:
     reports:
-      paths: 'light.sarif'
+      paths:
+       - light.sarif
