@@ -7,5 +7,6 @@ pre:
     scripts:
       - echo DONE!
     artifacts:
-        paths:
-          - light.sarif
+        reports:
+            paths:
+              - light.sarif
