@@ -1,14 +1,11 @@
 stages:
-    pre
+  pre
 
 pre:
-    stage: pre
-    image: maven:3.8.5-openjdk-11-slim
-    scripts:
-      - echo DONE!
-    artifacts:
-        name: wtf
-        reports:
-            baseDir: ''
-            paths: 'light.sarif'
-        paths: 'light.sarif'
+  stage: pre
+  image: maven:3.8.5-openjdk-11-slim
+  scripts:
+   - echo DONE!
+  artifacts:
+    reports:
+      paths: 'light.sarif'
