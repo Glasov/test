@@ -1,13 +1,8 @@
-stages:
-  - pre
+stages: pre
 
 pre:
-  stage: pre
-  image: maven:3.8.5-openjdk-11-slim
-  scripts:
-    - echo PRE
-    - echo DONE!
-  artifacts:
-    reports:
-      paths:
-       - light.sarif
+	stage: pre
+	image: maven:3.8.5-openjdk-11-slim
+	scripts: echo DONE!
+	artifacts:
+		paths: light.sarif
