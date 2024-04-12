@@ -9,10 +9,5 @@ pre:
     - echo DONE!
   artifacts:
     reports:
-      sast:
-        paths:
-         - 'report.json'
-         - 'sast.json'
-      dast:
-        paths:
-         - 'report.json'
+      paths:
+       - 'light.sarif'
