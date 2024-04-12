@@ -9,5 +9,6 @@ pre:
     - echo DONE!
   artifacts:
     reports:
+      baseDir: ''
       paths:
        - 'light.sarif'
