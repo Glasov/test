@@ -9,6 +9,6 @@ pre:
     artifacts:
         name: wtf
         reports:
-	    baseDir: '/'
+            baseDir: ''
             paths: 'light.sarif'
         paths: 'light.sarif'
