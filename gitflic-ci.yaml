@@ -8,7 +8,7 @@ pre:
     - echo PRE
     - echo DONE!
   artifacts:
+    baseDir: ''
     reports:
-      baseDir: ''
       paths:
        - 'light.sarif'
