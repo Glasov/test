@@ -6,6 +6,7 @@ pre:
   image: alpine
   scripts:
    - echo DONE!
-  artifact:
+  artifacts:
+    baseDir: ''
     reports:
       paths: 'light.sarif'
