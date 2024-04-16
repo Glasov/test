@@ -9,4 +9,5 @@ pre:
   artifacts:
     reports:
       baseDir: ''
-      paths: 'light.sarif'
+      sast:
+        paths: 'light.sarif'
