@@ -1,9 +1,14 @@
 stages:
-  - pre
+  pre
 
 pre:
   stage: pre
-  image: maven:3.8.5-openjdk-11-slim
+  image: alpine
   scripts:
-    - echo PRE
-    - echo DONE!
+   - echo DONE!
+  artifacts:
+    reports:
+      baseDir: ''
+      sast:
+        paths:
+         - 'light.sarif'
