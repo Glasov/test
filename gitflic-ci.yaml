@@ -7,7 +7,7 @@ pre:
   scripts:
    - echo DONE!
   artifacts:
-    report:
-      baseDir: ''
+    reports:
       sast:
-        paths: 'light.sarif'
+        paths:
+         - 'light.sarif'
