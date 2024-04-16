@@ -5,6 +5,7 @@ pre:
   stage: pre
   image: alpine
   scripts:
+   - sleep 30
    - echo DONE!
   artifacts:
     reports:
