@@ -1,3 +1,3 @@
-А
+GitFlic test
 
-A вот здесь сделал папочку: [yes](test)
+[About](ABOUT.md)
