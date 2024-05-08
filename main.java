@@ -1,3 +1,39 @@
+/**
+ * What the heeeeeeell!
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ */
 @Controller
 @DefaultExceptionHandler
 @RequestMapping("project/{userAlias}/{projectAlias}/blob")
