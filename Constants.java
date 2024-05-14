@@ -39,6 +39,7 @@ public final class Constants {
 	 * declaration.
 	 */
 	public static final int OBJECT_ID_LENGTH = 20;
+	public static final int object_id_length = 20;
 
 	/**
 	 * A Git object can be expressed as a 40 character string of hexadecimal
